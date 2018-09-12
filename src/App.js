@@ -14,7 +14,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({isLoading: true});
-    fetch('localhost:8090/')
+    fetch('https://localhost:8090/')
       .then(response => response.json())
       .then(data => this.setState({ data }));
     
