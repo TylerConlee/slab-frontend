@@ -14,7 +14,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({isLoading: true});
-    fetch('https://localhost:8090/')
+    fetch('/api')
       .then(response => response.json())
       .then(data => this.setState({ data }));
     
@@ -43,3 +43,4 @@ class App extends Component {
 }
 
 export default App;
+-+-+
