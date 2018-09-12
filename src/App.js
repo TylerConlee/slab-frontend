@@ -17,6 +17,7 @@ class App extends Component {
     fetch('localhost:8090/')
       .then(response => response.json())
       .then(data => this.setState({ data }));
+    console.log(data)
   }
   render() {
     const { data,isLoading } = this.state;
