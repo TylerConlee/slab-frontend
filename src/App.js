@@ -17,7 +17,7 @@ class App extends Component {
     fetch('localhost:8090/')
       .then(response => response.json())
       .then(data => this.setState({ data }));
-    console.log(data)
+    
   }
   render() {
     const { data,isLoading } = this.state;
@@ -33,8 +33,8 @@ class App extends Component {
         </header>
         <p className="App-intro">
           <ul>
-            <li>Uptime: {data.uptime}</li>
-            <li>Version: {data.version}</li>
+            <li>Uptime: {data}</li>
+            <li>Version:</li>
           </ul>
         </p>
       </div>
