@@ -19,7 +19,7 @@ class App extends Component {
       .then(data => this.setState({ data }));
   }
   render() {
-    const { data } = this.state;
+    const { data,isLoading } = this.state;
 
     if (isLoading) {
       return <p>Loading...</p>;
