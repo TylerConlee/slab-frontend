@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Health from './components/health/health.js'
+import Health from './components/health/health'
 
 class App extends Component {
   
@@ -14,7 +14,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          <Health></Health>
+          <Health />
         </p>
       </div>
     );

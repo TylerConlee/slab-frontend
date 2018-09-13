@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Health extends Component {
+class Health extends React.Component {
     constructor(props) {
         super(props);
     
@@ -34,3 +34,5 @@ class Health extends Component {
         )
     }
 }
+
+export default Health
