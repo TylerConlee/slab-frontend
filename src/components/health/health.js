@@ -5,7 +5,7 @@ class Health extends Component {
         super(props);
     
         this.state = {
-          data: null,
+          data: ["uptime"= "", "version"= ""],
           isLoading: false,
         };
       }
