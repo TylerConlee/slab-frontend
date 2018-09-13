@@ -17,7 +17,7 @@ class App extends Component {
     fetch('/api')
       .then(response => response.json())
       .then(data => {
-        this.setState({ data });
+        this.setState({ data, isLoading: false });
         console.log(data);
       });
     
