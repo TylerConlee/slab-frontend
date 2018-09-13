@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Health extends React.Component {
+class Health extends Component {
     constructor(props) {
         super(props);
     
