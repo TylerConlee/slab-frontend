@@ -16,13 +16,17 @@ class App extends Component {
     this.setState({isLoading: true});
     fetch('/api')
       .then(response => response.json())
-      .then(data => this.setState({ data }));
+      .then(data => {
+        this.setState({ data });
+        console.log(data);
+      });
     
   }
   render() {
     const { data,isLoading } = this.state;
 
     if (isLoading) {
+      console.log(data)
       return <p>Loading...</p>;
     }
     return (
