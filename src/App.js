@@ -37,8 +37,8 @@ class App extends Component {
         </header>
         <p className="App-intro">
           <ul>
-            <li>Uptime: {data}</li>
-            <li>Version:</li>
+            <li>Uptime: {data.uptime}</li>
+            <li>Version: {data.version}</li>
           </ul>
         </p>
       </div>
