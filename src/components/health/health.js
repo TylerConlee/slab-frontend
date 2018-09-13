@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
 class Health extends Component {
+   
     constructor(props) {
         super(props);
     
         this.state = {
-          data: ["uptime"= "", "version"= ""],
+          data: {
+            uptime: "",
+            version: ""
+            },
           isLoading: false,
         };
       }
@@ -33,6 +37,5 @@ class Health extends Component {
             </ul>
         )
     }
-}
-
+} 
 export default Health
